@@ -202,6 +202,58 @@ console.log("Pedido original:", pedido);
 let pedidoProcesado = procesarPedido(pedido);
 console.log("Pedido procesado:", pedidoProcesado);
 
+// Interaccion de Arrays en js
+
+let frutas2 = ["manzana", "banana", "fresa"];
+let i = 0;
+while (i < frutas2.length) {
+  console.log(frutas2[i]);
+  i++;
+}
+
+let frutas3 = ["manzana", "banana", "fresa"];
+
+for (let i = 0; i < frutas3.length; i++) {
+  console.log(frutas3[i])
+}
+
+let cervezas = ["aguila", "club colombia", "meeler", "poker"];
+ let incremento = 0;
+ while (incremento < cervezas.length) {
+  console.log(cervezas[incremento])
+  incremento++
+ }
 
 
+let cervezas2 = ["Aguila", "culb colombia", "meeler", "poker"];
+for ( let i = 0; i < cervezas2.length; i++) {
+  console.log(cervezas[i])
+}
   
+// Busqueda de arrays con sus metodos 
+
+// indexof 
+
+const frutas4 = ["fresa", "mango", "melon"];
+
+const posicionMelon = frutas4.indexOf("melon");
+
+console.log(posicionMelon);
+
+const posicionDeFrutas = frutas4.indexOf("fresa", "mango", "melon");
+
+console.log(posicionDeFrutas);
+
+//metodo includes
+
+console.log(frutas4.includes("mango"));
+
+console.log(frutas4.includes("mango", 8));
+
+console.log(frutas4.includes("maracuya"));
+
+// metodo some
+
+const metodoSome = frutas4.some( frutas4 => frutas4 === "melon");
+
+console.log(metodoSome);
