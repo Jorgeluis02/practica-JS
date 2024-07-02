@@ -72,12 +72,9 @@ function cocinarDesayuno(plato, tiempo, temperatura) {
 }
  console.log(cocinarDesayuno('huevos', '10minutos', '80°', 'pan tostado', '3minutos', '90°'));
 
-  
-
 const sum = (a, b) => {a +b} // Da Undefined
 sum(2, 3)
  console.log(sum(2,3))
-
 
 function cuentaAtras (numero){
   if (numero < 0) { return }    // cuenta atras 
@@ -85,7 +82,6 @@ function cuentaAtras (numero){
   cuentaAtras(numero -1);
 }
 cuentaAtras(3);
-
 
 function cuentaAdelante(inicio, fin) {
   if (inicio > fin) { return }  // caso base para detener la recursión
