@@ -248,8 +248,42 @@ console.log(frutas4.includes("mango", 8));
 
 console.log(frutas4.includes("maracuya"));
 
-// metodo some
+// Metodo some
 
 const metodoSome = frutas4.some( frutas4 => frutas4 === "melon");
 
 console.log(metodoSome);
+
+const names2 = ["leo", "isa", "fan", "lea"]; 
+const tieneNombreLargo = names2.some(name => name.length > 3);
+console.log(tieneNombreLargo);
+
+
+//Metodo every 
+
+const numbers3 = [1,2,3,4,5,6,7,8,9];
+const everyNumbers = numbers3.every(numbers3 => numbers3 < 10);
+console.log(everyNumbers);
+
+const names4= ['Miguel', 'Juan', 'Itziar', 'Isabel'];
+const todosLosNombresSonLargos = names4.every(name4 => name4.length > 3);
+console.log(todosLosNombresSonLargos);
+
+// Metodo find
+
+const numbers5 = [34,5,86,-59,48,26,27];
+const numbersFind = numbers5.find(numbers5 => numbers5 <0);
+console.log(numbersFind);
+
+// Metodo endsWith
+
+const palabras = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita'
+const ultimaLetra = palabras.endsWith('Expedita');
+console.log(ultimaLetra);
+console.log(palabras.endsWith('ipsum'));
+
+function acabanEnA(words) {
+  {return words.every(words => words.endsWith('a')) }
+ { let palabrasA = words.every(words => words.endsWith('a')) 
+   console.log(palabrasA) }
+};
