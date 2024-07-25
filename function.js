@@ -357,3 +357,33 @@ const numbersLength = numbers8.map((numbers8) => numbers8.length)
 console.log(numbersLength);
 
 //Metodo Map mas Filter 
+
+
+const numbers9 = [1,2,3,4,5,6,7,8,9];
+
+const numsGrearterThanFive = numbers9
+.map(number => number * 2)
+.filter(number => number > 5);
+
+console.log(numsGrearterThanFive);
+
+//Fiter mas map
+
+const numbersFilter = [1,4,6,8];
+
+const numbersFiterDouble = numbers
+.filter(number => number % 2 ===0)
+.map(number => number * 2);
+
+console.log(numbersFiterDouble);
+
+
+//Metodo reduce 
+
+const numbers10 = [2,4,8];
+
+const numSum = numbers10.reduce((accumulator, currentNumber) => {
+  return accumulator + currentNumber;
+},0);
+
+console.log(numSum);
