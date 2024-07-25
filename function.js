@@ -287,3 +287,73 @@ function acabanEnA(words) {
  { let palabrasA = words.every(words => words.endsWith('a')) 
    console.log(palabrasA) }
 };
+
+
+// Ordenar arrays
+
+//Metodo .sort()
+const numbers4 = [4,5,1,8,3,9,2,6];
+  numbers4.sort(function(a, b) { 
+    return a-b
+})
+
+console.log(numbers4);
+
+//Metodo .sort() con arrowFunction
+
+const numbers6 = [4,5,1,8,3,9,2,6];
+  numbers6.sort((a, b) => a-b);
+
+console.log(numbers4);
+
+//Metodo .short() Decreciente 
+
+const numbersDecreciente4 = [4,5,1,8,3,9,2,6];
+numbersDecreciente4.sort(function(a, b) { 
+    return b-a
+})
+
+console.log(numbersDecreciente4);
+
+//Metodo .sort() con arrowFunction
+
+const numbersDecreciente6 = [4,5,1,8,3,9,2,6];
+numbersDecreciente6.sort((a, b) => b - a);
+
+console.log(numbersDecreciente6);
+
+let numeros45 =  [5, -10, -2, -25, -7];
+numeros45.sort((a,b) => Math.abs(a) - Math.abs(b));
+
+console.log(numeros45);
+
+function sortAbsoluteNumbers(numbers21) {
+  // Usamos el método sort con una función de comparación que compara los valores absolutos
+  return numbers21.sort((a, b) => Math.abs(a) - Math.abs(b));
+}
+// Ejemplo de uso
+const numeros = [5, -10, -2, -25, -7];
+const numerosOrdenados = sortAbsoluteNumbers(numeros);
+console.log(numerosOrdenados); // [-2, 5, -7, -10, -25]
+
+//Metodo filter
+
+const frases = ['cafe','viajes','lentes','brill0','esfuerzo'];
+const frasesConA = frases.filter(frases => frases.includes('a'));
+console.log(frasesConA);
+
+// Metodo Map
+
+const numbers7 = [4, 2, 3, 5];
+const numbersDuble = numbers7.map((numbers7) => {
+  return numbers7 *2
+});
+console.log(numbersDuble);
+
+//Metodo Map con la longitud decada array 
+
+const numbers8 = ['cafe','viajes','lentes','esfuerzo']; 
+const numbersLength = numbers8.map((numbers8) => numbers8.length)
+console.log(numbersLength);
+
+//Metodo Map mas Filter 
